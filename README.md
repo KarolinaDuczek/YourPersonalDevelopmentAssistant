@@ -7,7 +7,8 @@ It has some of the following features:
 - Journaling: Provide a digital journaling feature for users to reflect on their experiences, thoughts, and feelings.
 - Resource Library: Curate a library of articles, books, podcasts, and videos related to personal development topics for users to explore and learn from.
 
-# This application is written in tech stack listed below:
+# Tech-Stack
+This application is written in tech stack listed below:
 ASP.NET Core 8
 Blazor SSR
 Blazor WASM
