@@ -5,6 +5,7 @@ using PersonalDevelopmentAssistant.Client.Pages;
 using PersonalDevelopmentAssistant.Components;
 using PersonalDevelopmentAssistant.Components.Account;
 using PersonalDevelopmentAssistant.Data;
+using PersonalDevelopmentAssistant.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,6 +37,8 @@ builder.Services.AddIdentityCore<ApplicationUser>(options => options.SignIn.Requ
     .AddDefaultTokenProviders();
 
 builder.Services.AddSingleton<IEmailSender<ApplicationUser>, IdentityNoOpEmailSender>();
+
+builder.Services.AddScoped<IGoalService, GoalService>();
 
 var app = builder.Build();
 
