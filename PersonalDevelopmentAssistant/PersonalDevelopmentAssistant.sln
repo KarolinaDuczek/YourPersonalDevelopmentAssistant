@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalDevelopmentAssistan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalDevelopmentAssistant.Client", "PersonalDevelopmentAssistant.Client\PersonalDevelopmentAssistant.Client.csproj", "{F34E02B5-4BD4-41D1-9618-3A51F4FF36DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonalDevelopmentAssistantWebAPI", "PersonalDevelopmentAssistantWebAPI\PersonalDevelopmentAssistantWebAPI.csproj", "{D46990AB-B8E4-44A8-8D87-6F043DCBCE77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PersonalDevelopmentAssistantWebAPI", "PersonalDevelopmentAssistantWebAPI\PersonalDevelopmentAssistantWebAPI.csproj", "{D46990AB-B8E4-44A8-8D87-6F043DCBCE77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

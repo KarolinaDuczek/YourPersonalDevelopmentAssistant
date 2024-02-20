@@ -13,8 +13,11 @@ namespace PersonalDevelopmentAssistant.Services
             _context = context;
         }
 
-        public async Task<List<Goal>> GetAllTasks()
+        public async Task<List<Goal>> GetAllGoals()
         {
+            // Simulate asynchronous loading to demonstrate a loading indicator
+            await Task.Delay(500);
+
             var goals = await _context.Goals.ToListAsync();
             return goals;
         }

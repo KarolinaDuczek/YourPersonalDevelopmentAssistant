@@ -1,0 +1,33 @@
+﻿@page "/goals"
+@inject IGoalService GoalService
+@attribute [StreamRendering(true)]
+
+
+<h3>GoalList</h3>
+
+@if(goals == null)
+{
+    <span>Loading...</span>
+}
+else if (goals.Count == 0)
+{
+    <span>No goals found.</span>
+}
+else
+{
+    <ul>
+        @foreach(var goal in goals)
+        {
+            <li>@goal.Name</li>
+        }
+    </ul>
+}
+
+@code {
+    List<Goal>? goals = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        goals = await GoalService.GetAllGoals();
+    }
+}

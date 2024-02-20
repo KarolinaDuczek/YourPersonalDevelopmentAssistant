@@ -4,6 +4,6 @@ namespace PersonalDevelopmentAssistant.Services
 {
     public interface IGoalService
     {
-        Task<List<Goal>> GetAllTasks();
+        Task<List<Goal>> GetAllGoals();
     }
 }
