@@ -1,6 +1,0 @@
-@PersonalDevelopmentAssistantWebAPI_HostAddress = http://localhost:5168
-
-GET {{PersonalDevelopmentAssistantWebAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
