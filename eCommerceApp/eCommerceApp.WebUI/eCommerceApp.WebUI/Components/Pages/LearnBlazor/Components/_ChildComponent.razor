@@ -1,0 +1,19 @@
+﻿@rendermode InteractiveServer
+
+<div>
+    <div class="alert alert-info">@Title</div>
+    @if (ChildContent != null)
+    {
+        <div class="alert alert-success">
+            <span>@ChildContent</span>
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public string Title { get; set; }
+
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}
